@@ -63,39 +63,9 @@ The system has three primary user roles:
 ○ Can log in to the system.
 ○ Can create new software applications.
 ○ Can manage system settings.
+![image](https://github.com/user-attachments/assets/78f26cdb-0c62-4bef-a268-a689b1631a99)
 
-├── src/
-│   ├── com/
-│   │   └── sample/
-│   │       ├── controllers/
-│   │           ├── SignUpServlet.java
-│   │           ├── LoginServlet.java
-│   │           ├── SoftwareServlet.java
-│   │           |__RequestData.java
-                |── RequestServlet.java
-│   │           └── ApprovalServlet.java
-│   │      
-│   │       
-│   │      
-│   │           
-│   │           
-│   └── web.xml
-├── WebContent/
-│   ├── META-INF/
-│   │   └── context.xml
-│   ├── WEB-INF/
-│   │   └── lib/
-│   ├── css/
-│   │   └── styles.css
-│   ├── js/
-│   │   └── scripts.js
-│   ├── signup.jsp
-│   ├── login.jsp
-│   ├── createSoftware.jsp
-│   ├── requestAccess.jsp
-│   └── pendingRequests.jsp
-├
-└── README.md
+
 
 
 mysql  query :
