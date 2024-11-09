@@ -30,6 +30,8 @@ Technologies to be used:
 The User Access Management System is a web-based application designed to streamline the
 process of managing user access to various software applications within an organization. It is
 an internal tool meant to enhance security and efficiency.
+
+
 2.2 Product Functions
 
 ● User Registration: New users can sign up and create an account.
