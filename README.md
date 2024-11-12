@@ -1,4 +1,4 @@
-Access-management system
+User-Access-management system
 
 description:
 
@@ -21,6 +21,8 @@ Technologies to be used:
 ● Java Servlets
 ● JavaServer Pages (JSP)
 ● mySQL Database
+
+
 2. Overall Description
 
 
@@ -70,28 +72,7 @@ The system has three primary user roles:
 
 
 
-mysql  query :
 
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    role ENUM('Employee', 'Manager', 'Admin') NOT NULL
-); 
-
-CREATE TABLE software (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    description TEXT,
-    access_levels ENUM('Read', 'Write', 'Admin') NOT NULL
-);
-
-CREATE TABLE requests (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    software_id INT,
-    access_type ENUM('Read', 'Write', 'Admin') NOT NULL,
-    reason TEXT,
     status ENUM('Pending', 'Approved', 'Rejected') DEFAULT 'Pending',
     FOREIGN KEY (user_id) REFERENCES users(id),
     FOREIGN KEY (software_id) REFERENCES software(id)
