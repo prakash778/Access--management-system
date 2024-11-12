@@ -73,7 +73,4 @@ The system has three primary user roles:
 
 
 
-    status ENUM('Pending', 'Approved', 'Rejected') DEFAULT 'Pending',
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (software_id) REFERENCES software(id)
-);
+    
